@@ -43,7 +43,6 @@ submitButton.addEventListener("click", async (evt) => {
     }
 
     gallery.innerHTML = markup;
-
     lightbox.refresh();
 }) 
  
@@ -53,7 +52,6 @@ loadMoreButton.addEventListener("click", async (evt) => {
     const markup = createMarkUp(data);
 
     gallery.innerHTML = gallery.innerHTML + markup;
-
     lightbox.refresh();
     
     if (page * perPage >= data.totalHits) {
